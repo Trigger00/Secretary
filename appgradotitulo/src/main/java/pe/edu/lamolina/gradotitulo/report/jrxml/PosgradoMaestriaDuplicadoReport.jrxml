@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="PosgradoMaestriaDuplicadoReport.jrxml" language="groovy" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" isSummaryNewPage="true" uuid="87cc0675-4747-4795-925e-68b8be989b13">
+	<property name="ireport.zoom" value="1.9487171000000127"/>
+	<property name="ireport.x" value="503"/>
+	<property name="ireport.y" value="1505"/>
+	<parameter name="P_LOGO" class="java.lang.String">
+		<defaultValueExpression><![CDATA["C:\\Proyecto\\data\\credicoop-logo.jpg"]]></defaultValueExpression>
+	</parameter>
+	<queryString language="json">
+		<![CDATA[data]]>
+	</queryString>
+	<field name="textoNombreCompleto" class="java.lang.String">
+		<fieldDescription><![CDATA[textoNombreCompleto]]></fieldDescription>
+	</field>
+	<field name="facultad" class="java.lang.String"/>
+	<field name="fechaAprobacioncu" class="java.lang.String"/>
+	<field name="facultadEspecial" class="java.lang.String"/>
+	<field name="rector" class="java.lang.String"/>
+	<field name="decano" class="java.lang.String"/>
+	<field name="secretarioGeneral" class="java.lang.String"/>
+	<field name="codigoUniverisdad" class="java.lang.String"/>
+	<field name="textoCodigoExternoDocumento" class="java.lang.String"/>
+	<field name="textoNumeroDocumento" class="java.lang.String"/>
+	<field name="abrebiadoGradoTitulo" class="java.lang.String"/>
+	<field name="modalidadGradoTitulo" class="java.lang.String"/>
+	<field name="modalidadEstudio" class="java.lang.String"/>
+	<field name="textoResolucionRectoral" class="java.lang.String"/>
+	<field name="tipoEmision" class="java.lang.String"/>
+	<field name="numeroLibro" class="java.lang.String"/>
+	<field name="numeroFolio" class="java.lang.String"/>
+	<field name="numeroRegistro" class="java.lang.String"/>
+	<field name="gradoAcademico" class="java.lang.String"/>
+	<field name="textoFechaAprobacioncu" class="java.lang.String"/>
+	<field name="textoFechaAprobacioncuOriginal" class="java.lang.String"/>
+	<field name="diaConsejoUniversitarioOriginal" class="java.lang.String"/>
+	<field name="mesConsejoUniversitarioOriginal" class="java.lang.String"/>
+	<field name="anouConsejoUniversitarioOriginal" class="java.lang.String"/>
+	<field name="diaConsejoUniversitario" class="java.lang.String"/>
+	<field name="mesConsejoUniversitario" class="java.lang.String"/>
+	<field name="anouConsejoUniversitario" class="java.lang.String"/>
+	<field name="textoMaestro" class="java.lang.String"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<detail>
+		<band height="555" splitType="Stretch">
+			<textField>
+				<reportElement mode="Transparent" x="0" y="165" width="802" height="26" forecolor="#000000" backcolor="#FFFFFF" uuid="ac1796ef-1f09-44f9-86e7-1c461fa72d39"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="English" size="23" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{facultad}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="190" width="445" height="26" uuid="bb0da091-7b91-4728-be5f-93294fc79dd5"/>
+				<box leftPadding="4"/>
+				<textElement textAlignment="Right" verticalAlignment="Top">
+					<font fontName="English" size="23" isBold="false"/>
+				</textElement>
+				<text><![CDATA[El Consejo Universitario con fecha    ]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="273" width="802" height="42" forecolor="#000000" backcolor="#FFFFFF" uuid="89c0b913-a8da-4024-afef-b4c604f989ba"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Modern No. 20" size="27" isBold="true" isItalic="true" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{facultadEspecial}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="304" width="802" height="42" forecolor="#000000" backcolor="#FFFFFF" uuid="aa29bcfe-0e3b-4128-8d3b-a8f218188681"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="html">
+					<font fontName="Modern No. 20" size="27" isBold="true" isItalic="true" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["<font size='6'>a : </font>"+$F{textoNombreCompleto}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="380" width="803" height="26" uuid="a7279229-57a4-4f97-874d-caa7c706b673"/>
+				<box leftPadding="4"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="English" size="23" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Por tanto, se expide el presente Diploma para que se le reconozca como tal.]]></text>
+			</staticText>
+			<image>
+				<reportElement x="362" y="10" width="78" height="79" uuid="9999d6a5-5617-490d-b2d8-08ae0d807077"/>
+				<imageExpression><![CDATA[$P{P_LOGO}]]></imageExpression>
+			</image>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="243" width="802" height="42" forecolor="#000000" backcolor="#FFFFFF" uuid="8c2ca423-0917-4945-b7e2-ce50aefb17cd"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="none">
+					<font fontName="Modern No. 20" size="27" isBold="true" isItalic="true" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{gradoAcademico}+" en"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="0" y="94" width="802" height="33" uuid="6d3b180f-d0b0-4d9c-be44-60b346ff9401"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial Unicode MS" size="24" isBold="false"/>
+				</textElement>
+				<text><![CDATA[A NOMBRE DE LA NACIÓN]]></text>
+			</staticText>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="345" width="801" height="41" forecolor="#000000" backcolor="#FFFFFF" uuid="580fc734-72ff-4ca8-be01-a8278e5bab84"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="html">
+					<font fontName="Old Script" size="27" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Conferido el "+"<font size='5'>"+$F{diaConsejoUniversitarioOriginal}+"</font>"+$F{mesConsejoUniversitarioOriginal}+"<font size='5'>"+$F{anouConsejoUniversitarioOriginal}+"</font>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="448" y="190" width="353" height="26" forecolor="#000000" backcolor="#FFFFFF" uuid="9bc19367-9754-48f0-bd56-90b65bb092ac"/>
+				<textElement verticalAlignment="Middle" rotation="None" markup="html">
+					<font fontName="English" size="22" isBold="true" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{diaConsejoUniversitario}+$F{mesConsejoUniversitario}.toLowerCase()+$F{anouConsejoUniversitario}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="200" width="802" height="45" forecolor="#000000" backcolor="#FFFFFF" uuid="e203e1d4-a281-4027-a1ec-6b8a0fed816a"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="html">
+					<font fontName="English" size="23" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["aprueba otorgar el duplicado del Grado Académico de "+"<b style="+"font-size:30px"+">"+"&nbsp;"+$F{textoMaestro}+"</b>"]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="278" y="521" width="245" height="12" uuid="33b4694b-fb44-493d-8f5e-23b45e632066"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial" size="2" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UNIVERSIDADNACIONALAGRARIALAMOLINAUNIVERSIDADNACIONALAGRARIALAMOLINAUNIVERSIDADNACIONALAGRARIALAMOLINAUNIVERSIDADNACIONAL]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="278" y="532" width="245" height="12" uuid="79ac1889-2641-454d-8cb4-49696bbcb46c"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{secretarioGeneral}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="522" y="543" width="266" height="12" uuid="0071498f-e9b3-4c4c-b892-c818e0221f72"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[RECTOR]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="278" y="543" width="245" height="12" uuid="20008e83-c9fd-4ebe-aafa-687b0199c022"/>
+				<textElement textAlignment="Center" verticalAlignment="Top">
+					<font fontName="Arial" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[SECRETARIO GENERAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="522" y="521" width="266" height="12" uuid="319952e8-5ac8-42fd-9078-03e0810a3409"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial" size="2" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UNIVERSIDADNACIONALAGRARIALAMOLINAUNIVERSIDADNACIONALAGRARIALAMOLINAUNIVERSIDADNACIONALAGRARIALAMOLINAUNIVERSIDADNACIONAL]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="522" y="532" width="266" height="12" uuid="ffd56401-68af-498c-b77e-f2aa3f33a972"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{rector}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="430" width="802" height="26" forecolor="#000000" backcolor="#FFFFFF" uuid="07934aa9-7d4a-4b28-b4a5-2430559f3b51"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="html">
+					<font fontName="English" size="23" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Registrado con el No.&nbsp;"+"<font size='5.1'><b>"+$F{numeroRegistro}+"</b></font>"+"&nbsp; en el libro respectivo."]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement mode="Transparent" x="0" y="405" width="802" height="26" forecolor="#000000" backcolor="#FFFFFF" uuid="0888ba9a-21a1-47a9-8b8f-efc8a796a66b"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle" rotation="None" markup="html">
+					<font fontName="English" size="23" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA["Dado y firmado en La Molina el "+"<font size='5.1'><b>"+$F{diaConsejoUniversitario}+$F{mesConsejoUniversitario}.toLowerCase()+$F{anouConsejoUniversitario}+".</b></font>"]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="25" y="532" width="254" height="12" uuid="861c8d5f-64a8-4784-8506-1ec4a0f83ffc"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="Arial" size="7" isBold="true"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{decano}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="25" y="543" width="254" height="12" uuid="51a4b67b-fadd-460f-81e9-3ba4e7c48628"/>
+				<textElement textAlignment="Center">
+					<font fontName="Arial" size="7" isBold="true"/>
+				</textElement>
+				<text><![CDATA[DIRECTOR ESCUELA DE POSGRADO]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="521" width="254" height="12" uuid="7e4d59b0-ed62-438a-b2c2-b47c9556b013"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial" size="2" isBold="true"/>
+				</textElement>
+				<text><![CDATA[UNIVERSIDADNACIONALAGRARIALAMOLINAUNIVERSIDADNACIONALAGRARIALAMOLINAUNIVERSIDADNACIONALAGRARIALAMOLINAUNIVERSIDADNACIONAL]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="126" width="802" height="40" uuid="98bc0296-d87f-4632-aadd-f3c1b21b7971"/>
+				<box leftPadding="4"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font fontName="English" size="30" isBold="false"/>
+				</textElement>
+				<text><![CDATA[El Rector de la Universidad Nacional Agraria La Molina]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="24" width="802" height="51" uuid="7395ff76-4695-424b-af4c-0dd716a5e5f9"/>
+				<textElement textAlignment="Justified">
+					<font fontName="Arial" size="34" isBold="false" isStrikeThrough="false"/>
+				</textElement>
+				<text><![CDATA[                 REPÚBLICA          DEL PERÚ]]></text>
+			</staticText>
+		</band>
+		<band height="555" splitType="Stretch">
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="536" y="496" width="24" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="5822c475-749e-4e1a-8f15-01641d5dfef7"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="559" y="428" width="199" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="e65b4844-18b5-4d0f-94f9-760be5f6e495"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Modalidad de Estudios]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="536" y="326" width="24" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="aff3eb2a-613f-427a-901b-9393a09ab669"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="559" y="462" width="199" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="1cb12629-408e-4f67-8b10-ed561921cbe8"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Abreviatura de Grado o Título]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="364" y="513" width="173" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="16488841-ec2f-4839-8871-58fce97dc69d"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{codigoUniverisdad}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" x="559" y="496" width="199" height="18" uuid="09e158e2-e869-483b-be81-69359062709f"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false"/>
+				</textElement>
+				<text><![CDATA[Tipo de Documento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="559" y="394" width="199" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="3472f843-becb-469d-89c5-52f5cfb2257e"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Fecha de Resolución]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="559" y="411" width="199" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="5afa5e31-8095-4683-bfb0-3b8d71d8834d"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Número de Resolución]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="407" y="0" width="351" height="309" uuid="7a35664f-de8e-4313-a942-f72590af54a3"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial Unicode MS" size="24" isBold="false"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="364" y="343" width="173" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="012378b2-266d-43a7-849f-2a6c5d9884a1"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroLibro}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="536" y="479" width="24" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="1e8fbfe0-9d18-4138-85ab-45270c0e5b93"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="536" y="513" width="24" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="48a83e4b-53b4-4bb6-84f3-f2bffebdd98d"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="536" y="462" width="24" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="e7014f31-68bb-453f-9813-449bc93b547d"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="559" y="513" width="199" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="39f9fff8-d306-4f76-92ef-5c87e0cb1807"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Código de la Universidad]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="757" y="0" width="45" height="555" uuid="7b308ea8-5f20-4f4c-af35-b4118f76cf9e"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial Unicode MS" size="24" isBold="false"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="364" y="428" width="173" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="27544bb1-4fb4-4fac-a763-abca38e7aeaa"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{modalidadEstudio}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="559" y="343" width="199" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="9822b32f-bf9f-47ab-86f7-685ef7e4f928"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Libro]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="364" y="394" width="173" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="032fa801-ba88-4a1d-99b5-507edc67a1dd"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaAprobacioncu}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="559" y="377" width="199" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="9a05d500-ca96-4d79-8b42-2834d4586864"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Tipo de Emisión del Diploma]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="364" y="326" width="173" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="15da6443-a87f-4299-b074-69eb0a586bb0"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroFolio}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="559" y="479" width="199" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="8b26c872-e366-4d0a-bc49-d7e9c4d389ad"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Número de Documento]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="536" y="377" width="24" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="bb65b9c1-edd0-4589-b593-32209bc63974"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="536" y="445" width="24" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="9055247b-ac77-4fcc-b0e5-e18c6e9e5513"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="364" y="309" width="173" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="133fe3a8-5d7f-4914-a65e-f612b570326f"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{numeroRegistro}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="536" y="309" width="24" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="f058f78c-b074-4216-98e2-e77f6aaf1f38"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="364" y="496" width="173" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="27dc72fd-0579-47db-95b6-662c28b14fa7"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{textoCodigoExternoDocumento}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="559" y="445" width="199" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="0423cd3e-8433-492a-bd06-66db7a440aa6"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Modalidad de obtención del Grado o Título]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="536" y="394" width="24" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="5404b2e1-0dce-4fba-8e02-def64acb4c77"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="559" y="309" width="199" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="1bc790db-c8f9-486d-b2e0-6ab83b5beacd"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Registro]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="559" y="326" width="199" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="cc7e4139-2546-4500-ba45-7d037a921eae"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Folio]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="364" y="377" width="173" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="ce4141c7-895e-4209-bc67-1b9848211dc4"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{tipoEmision}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="364" y="462" width="173" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="d49bcde8-eeb9-4b96-a0e2-16e79624e396"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{abrebiadoGradoTitulo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="407" y="530" width="351" height="25" uuid="7b9b21b7-d76a-4796-ae92-9b5ff1a61243"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font fontName="Arial Unicode MS" size="24" isBold="false"/>
+				</textElement>
+				<text><![CDATA[]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="536" y="411" width="24" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="90cdb977-4b16-4ea6-b4f5-eec2cdbc71e4"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="364" y="445" width="173" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="fea6b239-db66-4a16-9b88-56e36baaf588"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{modalidadGradoTitulo}.toUpperCase()]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="364" y="411" width="173" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="ea6398d5-cc60-4f62-805d-be12b3c0b72f"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{textoResolucionRectoral}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="536" y="428" width="24" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="c449e5c2-67fa-4c49-85b7-e3381d4502c8"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="536" y="343" width="24" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="808ad212-5541-4841-b56d-47ed6d598b81"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="364" y="479" width="173" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="b6f90180-6747-4169-8756-7fc2ac4726ae"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{textoNumeroDocumento}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="536" y="360" width="24" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="8970a598-da9f-4fbc-b5eb-85326ac35abe"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="559" y="360" width="199" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="cdca7d34-3630-4a42-947a-fe7ddb7b4d26"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<text><![CDATA[Fecha Diploma Duplicado]]></text>
+			</staticText>
+			<textField>
+				<reportElement positionType="Float" stretchType="RelativeToTallestObject" mode="Transparent" x="364" y="360" width="173" height="18" forecolor="#000000" backcolor="#FFFFFF" uuid="ea429f7d-bc0d-4a12-a482-4e8fbb5a5892"/>
+				<textElement textAlignment="Left" verticalAlignment="Top" rotation="UpsideDown" markup="none">
+					<font fontName="Century-Schoolbook-Normal" size="10" isBold="false" isItalic="false" isUnderline="false" isStrikeThrough="false" pdfEncoding="Cp1252" isPdfEmbedded="false"/>
+					<paragraph lineSpacing="Single"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{fechaAprobacioncu}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+</jasperReport>

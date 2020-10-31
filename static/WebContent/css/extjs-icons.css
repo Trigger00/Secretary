@@ -1,0 +1,286 @@
+/* .y-grid3-different-row { */
+/*     color: #f20726 !important; */
+/* } */
+.y-grid3-different-row .x-grid-cell { 
+    background-color: #e2ffe2; 
+    color: #090; 
+}
+.y-grid3-not-so-different-row .x-grid-cell { 
+/* 	background-color: #ffe2e2;  */
+/*     color: #900;  */
+}
+
+.alert-green-cell-row .x-grid-cell { 
+	background-color: #e2ffe2; 
+    color: #090; 
+}
+
+.alert-yellow-cell-row .x-grid-cell { 
+	background-color: #faffe2; 
+    color: #e9b000 ; 
+}
+
+.alert-red-cell-row .x-grid-cell { 
+	background-color: #ffe2e2; 
+    color: #900; 
+}
+
+
+.btn-logout-icon {
+	background-image: url(../images/icons/key.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-sunat-icon {
+	background-image: url(../images/png/sunat_16.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-add-icon {
+	background-image: url(../images/icons/add.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-search-icon {
+	background-image: url(../images/icons/search.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-export-icon {
+	background-image: url(../images/icons/page_white_go.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-candado-icon {
+	background-image: url(../images/icons/candado.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-cancel-icon {
+	background-image: url(../images/icons/cancel.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-register-icon {
+	background-image: url(../images/icons/guardar.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-delete-icon {
+	background-image: url(../images/icons/icon_delete.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-lupa-icon {
+	background-image: url(../images/icons/icon_lupa.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-edit-icon {
+	background-image: url(../images/icons/icon_edit.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-filter-icon {
+	
+	background-image: url(../images/icons/filter_icon.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-up-icon {
+	margin: 2px 2px 2px 5px;
+	background-image: url(../images/icons/up_icon.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-down-icon {
+	margin: 2px 2px 2px 5px;
+	background-image: url(../images/icons/down_icon.png) !important; 
+	background-repeat: no-repeat;
+}
+.up-icon{
+	padding-left:10px;
+}
+.btn-eliminar{
+	padding-left:10px;
+}
+.btn-editar{
+	padding-left:10px;
+}
+
+.btn-left-icon {
+	background-image: url(../images/icons/left_icon.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-right-icon {
+	background-image: url(../images/icons/right_icon.png) !important; 
+	background-repeat: no-repeat;
+}
+.processed-icon {
+	background-image: url(../images/icons/processed-icon.png) !important; 
+	background-repeat: no-repeat;
+}
+.unprocessed-icon {
+	background-image: url(../images/icons/unprocessed-icon.png) !important; 
+	background-repeat: no-repeat;
+}
+.currentprocess-icon {
+	background-image: url(../images/icons/currentprocess-icon.png) !important; 
+	background-repeat: no-repeat;
+}
+
+.btn-logout-icon {
+	background-image: url(../images/icons/key.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-sunat-icon {
+	background-image: url(../images/png/sunat_16.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-add-icon {
+	background-image: url(../images/icons/add.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-search-icon {
+	background-image: url(../images/icons/search.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-export-icon {
+	background-image: url(../images/icons/page_white_go.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-candado-icon {
+	background-image: url(../images/icons/candado.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-cancel-icon {
+	background-image: url(../images/icons/cancel.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-register-icon {
+	background-image: url(../images/icons/guardar.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-delete-icon {
+	background-image: url(../images/icons/icon_delete.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-lupa-icon {
+	background-image: url(../images/icons/icon_lupa.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-edit-icon {
+	background-image: url(../images/icons/icon_edit.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-filter-icon {
+	background-image: url(../images/icons/filter_icon.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-up-icon {
+	background-image: url(../images/icons/up_icon.png) !important; 
+	background-repeat: no-repeat;
+}
+
+.btn-left-icon {
+	background-image: url(../images/icons/left_icon.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-right-icon {
+	background-image: url(../images/icons/right_icon.png) !important; 
+	background-repeat: no-repeat;
+}
+.processed-icon {
+	background-image: url(../images/icons/processed-icon.png) !important; 
+	background-repeat: no-repeat;
+}
+.unprocessed-icon {
+	background-image: url(../images/icons/unprocessed-icon.png) !important; 
+	background-repeat: no-repeat;
+}
+.currentprocess-icon {
+	background-image: url(../images/icons/currentprocess-icon.png) !important; 
+	background-repeat: no-repeat;
+}
+
+.btn-logout-icon {
+	background-image: url(../images/icons/key.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-sunat-icon {
+	background-image: url(../images/png/sunat_16.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-add-icon {
+	background-image: url(../images/icons/add.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-search-icon {
+	background-image: url(../images/icons/search.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-export-icon {
+	background-image: url(../images/icons/page_white_go.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-candado-icon {
+	background-image: url(../images/icons/candado.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-cancel-icon {
+	background-image: url(../images/icons/cancel.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-register-icon {
+	background-image: url(../images/icons/guardar.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-delete-icon {
+	background-image: url(../images/icons/icon_delete.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-lupa-icon {
+	background-image: url(../images/icons/icon_lupa.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-edit-icon {
+	background-image: url(../images/icons/icon_edit.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-filter-icon {
+	background-image: url(../images/icons/filter_icon.png) !important; 
+	background-repeat: no-repeat;
+}
+
+.btn-left-icon {
+	background-image: url(../images/icons/left_icon.png) !important; 
+	background-repeat: no-repeat;
+}
+.btn-right-icon {
+	background-image: url(../images/icons/right_icon.png) !important; 
+	background-repeat: no-repeat;
+}
+.processed-icon {
+	background-image: url(../images/icons/processed-icon.png) !important; 
+	background-repeat: no-repeat;
+}
+.unprocessed-icon {
+	background-image: url(../images/icons/unprocessed-icon.png) !important; 
+	background-repeat: no-repeat;
+}
+.currentprocess-icon {
+	background-image: url(../images/icons/currentprocess-icon.png) !important; 
+	background-repeat: no-repeat;
+}
+.ux-tree-folder-icon {
+	background-image: url(../images/icons/folder.png) !important; 
+	background-repeat: no-repeat;
+}
+.x-grid-tree-node-expanded .ux-tree-folder-icon {
+	background-image: url(../images/icons/folder-open.png) !important; 
+	background-repeat: no-repeat;
+}
+.ux-tree-file-synchronized-icon {
+	background-image: url(../images/icons/leaf_synchronized.png) !important; 
+	background-repeat: no-repeat;
+}
+.ux-tree-file-unsynchronized-icon {
+	background-image: url(../images/icons/leaf_unsynchronized.png) !important; 
+	background-repeat: no-repeat;
+}
+
+.ux-tree-link-icon {
+	background-image: url(../images/icons/link-icon.png) !important; 
+	background-repeat: no-repeat;
+}
+.ux-tree-menu-icon {
+	background-image: url(../images/icons/menu-icon.png) !important; 
+	background-repeat: no-repeat;
+}

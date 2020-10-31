@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<fontFamilies>
+	<!-- the font-name used within the jasper report -->
+	<fontFamily name="Kunstler Script">
+		<!-- the actual font files within the jar 
+		<normal>fonts/ELEPHNT.TTF</normal>
+		<bold>fonts/ELEPHNT.TTF</bold>
+		<italic>fonts/ELEPHNT.TTF</italic>
+		<boldItalic>fonts/ELEPHNT.TTF</boldItalic>
+
+        <pdfEmbedded>true</pdfEmbedded>
+        -->
+          <!-- Normal Arial Font -->
+        <normal><![CDATA[fonts/KUNSTLER.ttf]]></normal>
+        <!-- Bold Arial Font -->
+        <bold><![CDATA[fonts/kunstshb.ttf]]></bold>
+        <!-- Italic Arial Font -->
+        <italic><![CDATA[fonts/kunstshb.ttf]]></italic>
+        <!-- Bolt italic Arial Font -->
+        <boldItalic><![CDATA[fonts/kunstshb.ttf]]></boldItalic>
+        <!-- Is font is embedded in PDF -->
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+	</fontFamily>
+	<fontFamily name="Arial Unicode MS">
+		<!-- the actual font files within the jar 
+		<normal>fonts/ELEPHNT.TTF</normal>
+		<bold>fonts/ELEPHNT.TTF</bold>
+		<italic>fonts/ELEPHNT.TTF</italic>
+		<boldItalic>fonts/ELEPHNT.TTF</boldItalic>
+
+        <pdfEmbedded>true</pdfEmbedded>
+        -->
+          <!-- Normal Arial Font -->
+        <normal><![CDATA[fonts/arialUnicodeMS.ttf]]></normal>
+        <!-- Bold Arial Font -->
+        <bold><![CDATA[fonts/arialUnicodeMS.ttf]]></bold>
+        <!-- Italic Arial Font -->
+        <italic><![CDATA[fonts/arialUnicodeMS.ttf]]></italic>
+        <!-- Bolt italic Arial Font -->
+        <boldItalic><![CDATA[fonts/arialUnicodeMS.ttf]]></boldItalic>
+        <!-- Is font is embedded in PDF -->
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+	</fontFamily>
+	<fontFamily name="English">
+		<!-- the actual font files within the jar 
+		<normal>fonts/ELEPHNT.TTF</normal>
+		<bold>fonts/ELEPHNT.TTF</bold>
+		<italic>fonts/ELEPHNT.TTF</italic>
+		<boldItalic>fonts/ELEPHNT.TTF</boldItalic>
+
+        <pdfEmbedded>true</pdfEmbedded>
+        -->
+          <!-- Normal Arial Font -->
+        <normal><![CDATA[fonts/english.ttf]]></normal>
+        <!-- Bold Arial Font -->
+        <bold><![CDATA[fonts/englishBold.TTF]]></bold>
+        <!-- Italic Arial Font -->
+        <italic><![CDATA[fonts/english.ttf]]></italic>
+        <!-- Bolt italic Arial Font -->
+        <boldItalic><![CDATA[fonts/english.ttf]]></boldItalic>
+        <!-- Is font is embedded in PDF -->
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+	</fontFamily>
+	<fontFamily name="Arial">
+		<!-- the actual font files within the jar 
+		<normal>fonts/ELEPHNT.TTF</normal>
+		<bold>fonts/ELEPHNT.TTF</bold>
+		<italic>fonts/ELEPHNT.TTF</italic>
+		<boldItalic>fonts/ELEPHNT.TTF</boldItalic>
+
+        <pdfEmbedded>true</pdfEmbedded>
+        -->
+          <!-- Normal Arial Font -->
+        <normal><![CDATA[fonts/arial.ttf]]></normal>
+        <!-- Bold Arial Font -->
+        <bold><![CDATA[fonts/arialbd.ttf]]></bold>
+        <!-- Italic Arial Font -->
+        <italic><![CDATA[fonts/arialbd.ttf]]></italic>
+        <!-- Bolt italic Arial Font -->
+        <boldItalic><![CDATA[fonts/arialbd.ttf]]></boldItalic>
+        <!-- Is font is embedded in PDF -->
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+	</fontFamily>
+	<fontFamily name="Serif">
+		<!-- the actual font files within the jar 
+		<normal>fonts/ELEPHNT.TTF</normal>
+		<bold>fonts/ELEPHNT.TTF</bold>
+		<italic>fonts/ELEPHNT.TTF</italic>
+		<boldItalic>fonts/ELEPHNT.TTF</boldItalic>
+
+        <pdfEmbedded>true</pdfEmbedded>
+        -->
+          <!-- Normal Arial Font -->
+        <normal><![CDATA[fonts/FreeSerifBold.ttf]]></normal>
+        <!-- Bold Arial Font -->
+        <bold><![CDATA[fonts/FreeSerifBold.ttf]]></bold>
+        <!-- Italic Arial Font -->
+        <italic><![CDATA[fonts/FreeSerifBold.ttf]]></italic>
+        <!-- Bolt italic Arial Font -->
+        <boldItalic><![CDATA[fonts/FreeSerifBold.ttf]]></boldItalic>
+        <!-- Is font is embedded in PDF -->
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+	</fontFamily>
+	<fontFamily name="LM Roman Demi 10">
+		<!-- the actual font files within the jar 
+		<normal>fonts/ELEPHNT.TTF</normal>
+		<bold>fonts/ELEPHNT.TTF</bold>
+		<italic>fonts/ELEPHNT.TTF</italic>
+		<boldItalic>fonts/ELEPHNT.TTF</boldItalic>
+
+        <pdfEmbedded>true</pdfEmbedded>
+        -->
+          <!-- Normal Arial Font -->
+        <normal><![CDATA[fonts/lmromandemiTenOblique.ttf]]></normal>
+        <!-- Bold Arial Font -->
+        <bold><![CDATA[fonts/lmromandemiTenOblique.ttf]]></bold>
+        <!-- Italic Arial Font -->
+        <italic><![CDATA[fonts/lmromandemiTenOblique.ttf]]></italic>
+        <!-- Bolt italic Arial Font -->
+        <boldItalic><![CDATA[fonts/lmromandemiTenOblique.ttf]]></boldItalic>
+        <!-- Is font is embedded in PDF -->
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+	</fontFamily>
+	<fontFamily name="Devine Wide">
+		<!-- the actual font files within the jar 
+		<normal>fonts/ELEPHNT.TTF</normal>
+		<bold>fonts/ELEPHNT.TTF</bold>
+		<italic>fonts/ELEPHNT.TTF</italic>
+		<boldItalic>fonts/ELEPHNT.TTF</boldItalic>
+
+        <pdfEmbedded>true</pdfEmbedded>
+        -->
+          <!-- Normal Arial Font -->
+        <normal><![CDATA[fonts/lmromandemiTenOblique.ttf]]></normal>
+        <!-- Bold Arial Font -->
+        <bold><![CDATA[fonts/lmromandemiTenOblique.ttf]]></bold>
+        <!-- Italic Arial Font -->
+        <italic><![CDATA[fonts/lmromandemiTenOblique.ttf]]></italic>
+        <!-- Bolt italic Arial Font -->
+        <boldItalic><![CDATA[fonts/lmromandemiTenOblique.ttf]]></boldItalic>
+        <!-- Is font is embedded in PDF -->
+        <pdfEmbedded><![CDATA[true]]></pdfEmbedded>
+	</fontFamily>
+</fontFamilies>
